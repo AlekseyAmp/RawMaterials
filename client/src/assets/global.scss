@@ -1,0 +1,72 @@
+@import './variables.scss';
+
+body {
+    background-color: $body_background;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.df {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.mt50px {
+    margin-top: 50px;
+}
+
+.gap20px {
+    gap: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid $gray;
+    padding: 10px;
+    text-align: center;
+}
+
+select {
+    padding: 5px;
+    border: 2px solid $gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    font-weight: 500;
+    color: $light_dark;
+}
+option {
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    font-weight: 500;
+    color: $light_dark;
+}
+
+button {
+    margin-top: 30px;
+}
