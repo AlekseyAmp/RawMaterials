@@ -8,16 +8,8 @@ services:
       POSTGRES_PASSWORD: 1
     ports:
       - "5432:5432"
-    container_name: rawmaterials-db
-
-  client:
-    build:
-      context: .
-      dockerfile: client/Dockerfile
-    ports:
-      - "3000:3000"
-    container_name: rawmaterials-client
-
+    container_name: rawmaterials-
+    
   server:
     build:
       context: .
@@ -27,3 +19,11 @@ services:
     depends_on:
       - client
     container_name: rawmaterials-server
+
+  client:
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: rawmaterials-client
